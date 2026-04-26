@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+
+actor "Читатель" as Reader
+actor "Библиотекарь" as Librarian
+actor "Система уведомлений" as NotifySystem
+
+rectangle "Библиотечная система" {
+    usecase "Искать книги" as SearchBooks
+    usecase "Бронировать книгу" as ReserveBook
+    usecase "Получать книгу" as GetBook
+    usecase "Возвращать книгу" as ReturnBook
+    usecase "Управлять фондом" as ManageFund
+    usecase "Проверять наличие книги" as CheckAvailability
+    usecase "Отправлять уведомление" as SendNotification
+}
+
+Reader --> SearchBooks
+Reader --> ReserveBook
+Reader --> GetBook
+Reader --> ReturnBook
+
+Librarian --> GetBook
+Librarian --> ReturnBook
+Librarian --> ManageFund
+
+NotifySystem --> SendNotification
+
+ReserveBook ..> CheckAvailability : <<include>>
+GetBook ..> CheckAvailability : <<include>>
+SendNotification ..> ReserveBook : <<extend>>
+
+@enduml

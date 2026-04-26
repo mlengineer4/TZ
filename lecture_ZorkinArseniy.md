@@ -137,7 +137,7 @@ print("Доступ разрешён")
 
 ## 6. Изображение
 
-![Блок-схема цикла](https://obs.ru-moscow-1.hc.sbercloud.ru/gv02-blog-obs01/d2f7988d-074a-4356-b7c8-54c3ebc5c9ff)
+![Блок-схема цикла](https://i.sstatic.net/x5Cqm.png)
 
 ---
 

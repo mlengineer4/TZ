@@ -137,7 +137,7 @@ print("Доступ разрешён")
 
 ## 6. Изображение
 
-![Блок-схема цикла](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/For-loop-diagram.svg/640px-For-loop-diagram.svg.png)
+![Блок-схема цикла](https://obs.ru-moscow-1.hc.sbercloud.ru/gv02-blog-obs01/d2f7988d-074a-4356-b7c8-54c3ebc5c9ff)
 
 ---
 
